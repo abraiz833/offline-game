@@ -1,0 +1,132 @@
+/* Add all Here's an example CSS code to style the game:
+
+*style.css*
+
+```
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Container Styles */
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Question Styles */
+
+#question {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Options Styles */
+
+#options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#options li {
+  margin-bottom: 10px;
+}
+
+#options input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Submit Button Styles */
+
+#submit {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #3e8e41;
+}
+
+/* Result Styles */
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #666;
+}
+
+/* Correct Answer Styles */
+
+.correct {
+  color: #2ecc71;
+}
+
+/* Incorrect Answer Styles */
+
+.incorrect {
+  color: #e74c3c;
+}
+
+/* Scoreboard Styles */
+
+.scoreboard {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.scoreboard li {
+  margin-bottom: 10px;
+}
+
+.scoreboard li span {
+  font-weight: bold;
+}
+```
+
+This CSS code styles the game container, question, options, submit button, result, and scoreboard.
+
+*Additional Styles:*
+
+You can add additional styles to customize the game's appearance:
+
+- Animations: Add CSS animations to enhance user experience.
+- Colors: Change colors to match your brand or theme.
+- Fonts: Use custom fonts to enhance readability.
+- Layout: Modify the layout to suit your needs.
+
+*Media Queries:*
+
+Add media queries to ensure responsiveness across various devices:
+
+```
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px
+``` styles here */

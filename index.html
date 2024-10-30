@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>offline game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Supherhero">
+    <meta name="keywords" content="programming hero,learn programming">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <!--@bootstrapCss-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <h3>Hello World</h3>
+
+    <div class="alert alert-primary" role="alert">
+        This is a primary alert—check it out with bootstrap!
+    </div>
+
+</div>
+
+
+
+
+
+<!--main js-->
+<script src="js/main.js"></script>
+</body>
+</html>Here's a simple game code in HTML, CSS, and JavaScript:
+
+*Game: Rock, Paper, Scissors*
+
+HTML:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Rock, Paper, Scissors</h1>
+	<div class="game-container">
+		<button id="rock">Rock</button>
+		<button id="paper">Paper</button>
+		<button id="scissors">Scissors</button>
+		<p id="result"></p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+```
+
+CSS (in style.css file):
+
+```
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.game-container {
+	width: 300px;
+	margin: 40px auto;
+}
+
+button {
+	margin: 10px;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#result {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+```
+
+JavaScript (in script.js file):
+
+```
+const rockButton = document.getElementById('rock');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
+const resultParagraph = document.getElementById('result');
+
+let playerScore = 0;
+let computerScore = 0;
+
+rockButton.addEventListener('click', () => {
+	playGame('rock');
+});
+
+paperButton.addEventListener('click', () => {
+	playGame('paper');
+});
+
+scissorsButton.addEventListener('click', () => {
+	playGame('scissors');
+});
+
+function playGame(playerChoice) {
+	const choices = ['rock', 'paper', 'scissors'];
+	const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+	if (playerChoice === computerChoice) {
+		resultParagraph.textContent = `Tie! You both chose ${playerChoice}.`;
+	} else if (
+		(playerChoice === 'rock' && computerChoice === 'scissors') ||
+		(playerChoice === 'paper' && computerChoice === 'rock') ||
+		(playerChoice === 'scissors' && computerChoice === 'paper')
+	) {
+		playerScore++;
+		resultParagraph.textContent = `You win! ${playerChoice} beats ${computerChoice}.`;
+	} else {
+		computerScore++;
+		resultParagraph.textContent = `Computer wins! ${computerChoice} beats ${playerChoice}.`;
+	}
+
+	document.querySelector('#score').textContent = `Player: ${playerScore} | Computer: ${computerScore}`;
+}
+```
+
+*Other Game Ideas:*
+
+1. Tic-Tac-Toe
+2. Snake Game
+3. Hangman
+4. Quiz Game
+5. Memory Match
+
+Would you like the code for a specific game or help with modifying this code?
